@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-12T13:47:27 IST" name="Suite" finished-at="2024-03-12T13:48:21 IST" duration-ms="54285">
+    <groups>
+      <group name="regression">
+        <method signature="TC001_UpBikeDetails.clickNewBikes()[pri:1, instance:TestCase.TC001_UpBikeDetails@792b749c]" name="clickNewBikes" class="TestCase.TC001_UpBikeDetails"/>
+        <method signature="TC002_UsedCarsDetails.UsedCarDetails()[pri:1, instance:TestCase.TC002_UsedCarsDetails@35841320]" name="UsedCarDetails" class="TestCase.TC002_UsedCarsDetails"/>
+        <method signature="TC003_GoogleLogin.verifyLoginPage()[pri:1, instance:TestCase.TC003_GoogleLogin@61c4eee0]" name="verifyLoginPage" class="TestCase.TC003_GoogleLogin"/>
+        <method signature="TC004_GoogleSignup.verifyLoginPage()[pri:1, instance:TestCase.TC004_GoogleSignup@6f10d5b6]" name="verifyLoginPage" class="TestCase.TC004_GoogleSignup"/>
+        <method signature="TC001_UpBikeDetails.clickUpcomingBikes()[pri:2, instance:TestCase.TC001_UpBikeDetails@792b749c]" name="clickUpcomingBikes" class="TestCase.TC001_UpBikeDetails"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TC001_UpBikeDetails.clickNewBikes()[pri:1, instance:TestCase.TC001_UpBikeDetails@792b749c]" name="clickNewBikes" class="TestCase.TC001_UpBikeDetails"/>
+        <method signature="TC003_GoogleLogin.verifyLoginPage()[pri:1, instance:TestCase.TC003_GoogleLogin@61c4eee0]" name="verifyLoginPage" class="TestCase.TC003_GoogleLogin"/>
+        <method signature="TC001_UpBikeDetails.clickUpcomingBikes()[pri:2, instance:TestCase.TC001_UpBikeDetails@792b749c]" name="clickUpcomingBikes" class="TestCase.TC001_UpBikeDetails"/>
+      </group> <!-- smoke -->
+      <group name="master">
+        <method signature="TC001_UpBikeDetails.clickNewBikes()[pri:1, instance:TestCase.TC001_UpBikeDetails@792b749c]" name="clickNewBikes" class="TestCase.TC001_UpBikeDetails"/>
+        <method signature="TC002_UsedCarsDetails.UsedCarDetails()[pri:1, instance:TestCase.TC002_UsedCarsDetails@35841320]" name="UsedCarDetails" class="TestCase.TC002_UsedCarsDetails"/>
+        <method signature="TC003_GoogleLogin.verifyLoginPage()[pri:1, instance:TestCase.TC003_GoogleLogin@61c4eee0]" name="verifyLoginPage" class="TestCase.TC003_GoogleLogin"/>
+        <method signature="TC004_GoogleSignup.verifyLoginPage()[pri:1, instance:TestCase.TC004_GoogleSignup@6f10d5b6]" name="verifyLoginPage" class="TestCase.TC004_GoogleSignup"/>
+        <method signature="TC001_UpBikeDetails.clickUpcomingBikes()[pri:2, instance:TestCase.TC001_UpBikeDetails@792b749c]" name="clickUpcomingBikes" class="TestCase.TC001_UpBikeDetails"/>
+      </group> <!-- master -->
+    </groups>
+    <test started-at="2024-03-12T13:47:27 IST" name="ChromeTest" finished-at="2024-03-12T13:48:21 IST" duration-ms="54285">
+      <class name="TestCase.TC004_GoogleSignup">
+        <test-method signature="verifyLoginPage()[pri:1, instance:TestCase.TC004_GoogleSignup@6f10d5b6]" started-at="2024-03-12T13:48:13 IST" name="verifyLoginPage" finished-at="2024-03-12T13:48:20 IST" duration-ms="7500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPage -->
+      </class> <!-- TestCase.TC004_GoogleSignup -->
+      <class name="TestCase.TC001_UpBikeDetails">
+        <test-method is-config="true" signature="invokeBrowser(java.lang.String,java.lang.String)[pri:0, instance:TestCase.TC001_UpBikeDetails@792b749c]" started-at="2024-03-12T13:47:28 IST" name="invokeBrowser" finished-at="2024-03-12T13:47:34 IST" duration-ms="6543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="clickNewBikes()[pri:1, instance:TestCase.TC001_UpBikeDetails@792b749c]" started-at="2024-03-12T13:47:34 IST" name="clickNewBikes" finished-at="2024-03-12T13:47:39 IST" duration-ms="4721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNewBikes -->
+        <test-method signature="clickUpcomingBikes()[pri:2, instance:TestCase.TC001_UpBikeDetails@792b749c]" started-at="2024-03-12T13:47:39 IST" name="clickUpcomingBikes" finished-at="2024-03-12T13:47:53 IST" depends-on-methods="TestCase.TC001_UpBikeDetails.clickNewBikes" duration-ms="13265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickUpcomingBikes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCase.TC001_UpBikeDetails@792b749c]" started-at="2024-03-12T13:48:20 IST" name="tearDown" finished-at="2024-03-12T13:48:21 IST" duration-ms="1230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCase.TC001_UpBikeDetails -->
+      <class name="TestCase.TC003_GoogleLogin">
+        <test-method signature="verifyLoginPage()[pri:1, instance:TestCase.TC003_GoogleLogin@61c4eee0]" started-at="2024-03-12T13:48:09 IST" name="verifyLoginPage" finished-at="2024-03-12T13:48:12 IST" duration-ms="3106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPage -->
+      </class> <!-- TestCase.TC003_GoogleLogin -->
+      <class name="TestCase.TC002_UsedCarsDetails">
+        <test-method signature="UsedCarDetails()[pri:1, instance:TestCase.TC002_UsedCarsDetails@35841320]" started-at="2024-03-12T13:47:53 IST" name="UsedCarDetails" finished-at="2024-03-12T13:48:09 IST" duration-ms="15878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsedCarDetails -->
+      </class> <!-- TestCase.TC002_UsedCarsDetails -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -33,6 +33,7 @@ public static WebDriver driver;
 		
 		//loading log4j2 file
 		logger = LogManager.getLogger(this.getClass());
+		
 		if(browser.equalsIgnoreCase("chrome")) {			
 			driver = new ChromeDriver();
 		}else if(browser.equalsIgnoreCase("edge")) {
@@ -55,7 +56,9 @@ public static WebDriver driver;
 	
 	//screenshot implementation
 	public String screenshot(String name) throws IOException {
+		
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		
 		TakesScreenshot takesScreenshot = (TakesScreenshot)driver;
 		File file = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir")+"\\ScreenShots\\"+name+" " +timeStamp+".png";

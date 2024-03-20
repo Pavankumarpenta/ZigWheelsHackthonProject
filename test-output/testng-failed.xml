@@ -30,6 +30,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestCase.TC004_GoogleSignup -->
+      <class name="TestCase.TC003_GoogleLogin">
+        <methods>
+          <include name="verifyLoginPage"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TC003_GoogleLogin -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

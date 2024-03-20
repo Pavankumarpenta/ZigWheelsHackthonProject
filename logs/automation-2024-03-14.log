@@ -1,0 +1,57 @@
+14:41:36.654 [main] INFO  TestBase.BaseClass - **** Starting TC_003_LoginSignup ****
+14:41:36.671 [main] INFO  TestBase.BaseClass - Verifying login/SignUp
+14:41:40.231 [main] INFO  TestBase.BaseClass - **** Finished TC_003_LoginSignup ****
+14:41:40.232 [main] INFO  TestBase.BaseClass - **** Starting TC_004_LoginPage ****
+14:41:40.232 [main] INFO  TestBase.BaseClass - Verifying loginPage
+14:41:47.821 [main] INFO  TestBase.BaseClass - **** Finished TC_004_LoginPage ****
+09:23:51.782 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_001_UpcomingBike ****
+09:23:51.791 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  New Bikes 
+09:26:25.243 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_001_UpcomingBike ****
+09:26:25.251 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  New Bikes 
+09:28:29.477 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_001_UpcomingBike ****
+09:28:29.486 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  New Bikes 
+09:35:50.564 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_001_UpcomingBike ****
+09:35:50.570 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  New Bikes 
+09:35:57.697 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on Upcoming Bikes
+09:36:07.778 [main] INFO  TestCase.TC001_UpBikeDetails - Failed to click upcoming bikes
+09:36:07.952 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_002_UsedCar ****
+09:36:07.953 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  Used Cars and selecting Chennai
+09:36:21.029 [main] INFO  TestCase.TC001_UpBikeDetails - Failed to click used cars!!!
+09:36:21.189 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_003_LoginSignup ****
+09:36:21.190 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying login/SignUp
+09:36:31.205 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying login/SignUp failed!!
+09:36:31.348 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_004_LoginPage ****
+09:36:31.348 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying loginPage
+09:36:41.429 [main] INFO  TestCase.TC001_UpBikeDetails - LoginPage verification failed!!!
+09:37:34.433 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_001_UpcomingBike ****
+09:37:34.437 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  New Bikes 
+09:37:40.848 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on Upcoming Bikes
+09:37:50.884 [main] INFO  TestCase.TC001_UpBikeDetails - Failed to click upcoming bikes
+09:37:51.025 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_002_UsedCar ****
+09:37:51.025 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  Used Cars and selecting Chennai
+09:38:04.065 [main] INFO  TestCase.TC001_UpBikeDetails - Failed to click used cars!!!
+09:38:04.205 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_003_LoginSignup ****
+09:38:04.205 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying login/SignUp
+09:38:14.262 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying login/SignUp failed!!
+09:38:14.394 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_004_LoginPage ****
+09:38:14.394 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying loginPage
+09:38:24.426 [main] INFO  TestCase.TC001_UpBikeDetails - LoginPage verification failed!!!
+09:45:28.213 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_001_UpcomingBike ****
+09:45:28.217 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  New Bikes 
+09:45:33.292 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on Upcoming Bikes
+09:45:46.627 [main] INFO  TestCase.TC001_UpBikeDetails - **** Finished TC_001_UpcomingBike ****
+09:45:46.942 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_002_UsedCar ****
+09:45:46.942 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on  Used Cars and selecting Chennai
+09:46:02.333 [main] INFO  TestCase.TC001_UpBikeDetails - **** Finished TC_002_UsedCar ****
+09:46:02.630 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_003_LoginSignup ****
+09:46:02.630 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying login/SignUp
+09:46:05.388 [main] INFO  TestCase.TC001_UpBikeDetails - **** Finished TC_003_LoginSignup ****
+09:46:05.805 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_004_LoginPage ****
+09:46:05.805 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying loginPage
+09:46:13.225 [main] INFO  TestCase.TC001_UpBikeDetails - **** Finished TC_004_LoginPage ****
+09:46:51.560 [main] INFO  TestBase.BaseClass - **** Starting TC_001_UpcomingBike ****
+09:46:51.565 [main] INFO  TestBase.BaseClass - clicking on  New Bikes 
+09:46:56.337 [main] INFO  TestBase.BaseClass - clicking on Upcoming Bikes
+09:47:10.802 [main] INFO  TestBase.BaseClass - **** Finished TC_001_UpcomingBike ****
+09:47:10.826 [main] INFO  TestBase.BaseClass - **** Starting TC_002_UsedCar ****
+09:47:10.826 [main] INFO  TestBase.BaseClass - clicking on  Used Cars and selecting Chennai

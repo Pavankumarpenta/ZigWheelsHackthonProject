@@ -9,29 +9,29 @@ public class ClickonLoginSignup extends BasePage{
 		super(driver);
 	}
 
-	//Zigwheels link
+	// WebElement representing Zigwheels link
 	@FindBy(xpath="//a[@class='zw i-b mt-10 pt-2 zw-srch-logo']")
 	public WebElement zigwheels;
 	
-	//Login/SignUp Button Element
+	// WebElement representing Login/SignUp Button
 	@FindBy(xpath = "//div[@id='des_lIcon']")
 	public WebElement loginSignUpButton;
 	
-	//Login with google Button
+	// WebElement representing Login with Google Button
 	@FindBy(xpath="//div[@class='lgn-sc c-p txt-l pl-30 pr-30 googleSignIn']")
 	public WebElement loginWithGoogleButton;
 	
-	//Click on Zigwheels
+	 // Method to click on Zigwheels link
 	public void clickZigwheels() {
 		zigwheels.click();
 	}
 	
-	//Click on Login/SignUp button 
+	// Method to click on Login/SignUp button 
 	public void clickLoginSignUp() {
 		loginSignUpButton.click();
 	}
 	
-	//Click on Sign in with Google
+	// Method to click on Sign in with Google button
 	public void selectGoogleButton() {
 		loginWithGoogleButton.click();
 	}

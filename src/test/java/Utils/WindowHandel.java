@@ -11,16 +11,17 @@ public class WindowHandel extends BasePage {
 		super(driver);
 	}
 	
-	//Implementing window Handling
+    // Method to implement window handling and navigate to a window with specified title 
 	public boolean windowNavigate(String WebsiteTitle) {
 		Set<String> window = driver.getWindowHandles();
 		for(String id : window) {
 			driver.switchTo().window(id);
-			String title = driver.getTitle();
-			if(title.equals(WebsiteTitle)) {
-				return true;
+			String title = driver.getTitle();     // Getting title of the current window
+			if(title.equals(WebsiteTitle)) {     // If title matches the specified title
+				return true; // Return true indicating navigation successful
 			}
 		}
-		return false;
+		return false;  // Return false indicating navigation failed
+
 	}
 }

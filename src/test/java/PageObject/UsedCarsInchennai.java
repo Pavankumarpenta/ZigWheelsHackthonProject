@@ -14,28 +14,30 @@ import Utils.ExcelUtility;
 import Utils.JavaScriptManager;
 
 public class UsedCarsInchennai extends BasePage {
-
+   
+	
+	// Initializing utility classes for Excel operations and JavaScript execution
 	ExcelUtility excelUtility = new ExcelUtility();
 	JavaScriptManager javaScriptManager = new JavaScriptManager();
 
 	public UsedCarsInchennai(WebDriver driver) {
 		super(driver);
-		this.driver = driver;
+//		this.driver = driver;
 	}
 
-	// Used Cars element
+	 // WebElement representing the 'Used Cars' element on the page
 	@FindBy(xpath = "//a[normalize-space()='Used Cars']")
 	WebElement usedCarsElement;
 
-	// Select Chennai
+	// WebElement representing the location option for Chennai
 	@FindBy(xpath = "//span[@onclick=\"goToUrl('/used-car/Chennai')\"]")
 	WebElement usedCarLocation;
 
-	// Popular Models element
+	// WebElement representing the 'Popular Models' section on the page
 	@FindBy(xpath = "//div[text()='Popular Models']")
 	WebElement popularModelsElements;
 
-	// List of popular models
+	// List of popular models displayed on the page
 	@FindBy(xpath = "//div[@class='gsc_thin_scroll']/ul/li/label")
 	List<WebElement> popularModelsList;
 
@@ -43,11 +45,11 @@ public class UsedCarsInchennai extends BasePage {
 	@FindBy(xpath = "//ul[@class=\"zw-sr-secLev usedCarMakeModelList popularModels ml-20 mt-10\"]/li/label")
 	List<WebElement> checkboxOfCars;
 
-	// Brand and Model element
+	// WebElement representing the 'Brand and Model' section on the page
 	@FindBy(xpath = "//span[normalize-space()='Brand and Model']")
 	WebElement BrandAndModel;
 
-	// Hover and select used cars
+    // Method to hover over the 'Used Cars' element
 	public void selectUsedCars() throws InterruptedException {
 		javaScriptManager.scrollToTop(driver);
 		Actions actions = new Actions(driver);
@@ -55,25 +57,31 @@ public class UsedCarsInchennai extends BasePage {
 		Thread.sleep(3000);
 	}
 
-	// Select the used cars location
+	// Method to select the location for used cars (Chennai)
 	public void clickSelectedCar() throws IOException, InterruptedException {
 		new BaseClass().screenshot("UsedCarLocation");
 
+        // Clicking on the location for used cars using JavaScript executor
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].click();", usedCarLocation);
 		Thread.sleep(3000);
 	}
 
-	// Scroll and click on the popular models
+	// Method to extract and store popular models in Excel
 	public void extractPopularModels() throws IOException, InterruptedException {
 		System.out.println("Total no of cars:" + checkboxOfCars.size());
+		// Setting header in Excel
 		excelUtility.setCellData("PopularModels", 0, 0, "PopularModelsList");
+		
+		// Scrolling to 'Brand and Model' section
 		javaScriptManager.scrollIntoView(driver, BrandAndModel);
+		
 		int row = 1;
 		for (WebElement model : checkboxOfCars) {
 			try {
 				System.out.println(model.getText());
-				excelUtility.setCellData("PopularModels", row, 0, model.getText());
+				// Storing model names in Excel
+				excelUtility.setCellData("PopularModels", row, 0, model.getText()); 
 				row++;
 			} catch (Exception e) {
 				e.printStackTrace();

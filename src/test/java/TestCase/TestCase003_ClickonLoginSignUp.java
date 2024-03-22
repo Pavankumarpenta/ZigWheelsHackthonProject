@@ -7,12 +7,14 @@ import PageObject.ClickonLoginSignup;
 import TestBase.BaseClass;
 
 public class TestCase003_ClickonLoginSignUp extends BaseClass {
-
+    
+	// Test method to verify login/signup functionality
 	@Test(priority=1,groups= {"smoke","regression","master"})
 	public void verifyLoginPage() {
-		logger.info("**** Starting TC_003_LoginSignup ****");
+		logger.info("**** Starting TestCase003_ClickonLoginSignUp  ****");
 		try {
 			logger.info("Verifying login/SignUp");
+			 // Instantiate ClickonLoginSignup object
 			ClickonLoginSignup loginSignupPage = new ClickonLoginSignup(driver);
 			
 			// click on the Zigwheels link to navigate back
@@ -30,6 +32,6 @@ public class TestCase003_ClickonLoginSignUp extends BaseClass {
 			e.printStackTrace();
 			Assert.fail();
 		}
-		logger.info("**** Finished TC_003_LoginSignup ****");
+		logger.info("**** Finished TestCase003_ClickonLoginSignUp  ****");
 	}
 }

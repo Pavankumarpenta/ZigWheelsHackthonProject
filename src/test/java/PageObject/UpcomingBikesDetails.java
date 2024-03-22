@@ -14,6 +14,7 @@ import Utils.JavaScriptManager;
 
 public class UpcomingBikesDetails extends BasePage {
 
+	// Initializing utility classes for JavaScript execution and Excel operations
 	JavaScriptManager javaScriptManager = new JavaScriptManager();
 	Utils.ExcelUtility excelUtility = new ExcelUtility();
 
@@ -21,62 +22,66 @@ public class UpcomingBikesDetails extends BasePage {
 		super(driver);
 	}
 
-	// Manufacturer Element
+	// WebElement representing the dropdown to locate manufacturer
 	@FindBy(id = "makeId")
 	public WebElement locateManufacturer;
 
-	// View More Bikes Button to view more bikes
+	// WebElement representing the 'View More Bikes' button
 	@FindBy(xpath = "//span[@class='zw-cmn-loadMore']")
 	public WebElement viewMoreBikesButton;
 
-	// Model names of all the Honda bikes
+	// List of WebElement representing the model names of all the Honda bikes
 	@FindBy(css = ".lnk-hvr.block.of-hid.h-height")
 	public List<WebElement> modelName;
 
-	// Prices of all the Honda bikes
+	// List of WebElement representing the prices of all the Honda bikes
 	@FindBy(xpath = "//li[contains(@class,'modelItem')]")
 	public List<WebElement> bikePrice;
 
-	// Launch date of all the Honda bikes
+    // List of WebElement representing the launch dates of all the Honda bikes
 	@FindBy(css = ".clr-try.fnt-14")
 	public List<WebElement> dateOfBikes;
 
 	
-	// Select Manufacturer Honda and click
+	// Method to select manufacturer Honda from dropdown and click
 	public void clickManufacturer() {
 		locateManufacturer.click();
 		Select s=new Select(locateManufacturer);
 		s.selectByIndex(3);
 	}
 
-	// Locate the view more bikes button and click on it
+	// Method to locate and click the 'View More Bikes' button
 	public void clickViewMoreButton() throws InterruptedException {
-
+		// Scrolling to the button
 		javaScriptManager.scrollIntoView(driver, viewMoreBikesButton);
 		Thread.sleep(3000);
-
+        // Clicking on the 'View More Bikes' button using JavaScript executor
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].click();", viewMoreBikesButton);
 		Thread.sleep(2000);
 	}
 
-	// Get the details of the bikes and store in the excel file
+	// Method to extract bike details and store them in Excel file
 	public void bikeDetails() throws IOException {
+		// Setting headers in Excel
 		excelUtility.setCellData("UpcomingBike", 0, 0, "BikeName");
 		excelUtility.setCellData("UpcomingBike", 0, 1, "Price");
 		excelUtility.setCellData("UpcomingBike", 0, 2, "LunchDate");
-		int row = 1;
+		
+		int row = 1;      // Initializing row counter for Excel
 		for (int i = 0; i < modelName.size(); i++) {
-			String bikeName = modelName.get(i).getText();
-			String launchDate = dateOfBikes.get(i).getText();
-			int price = Integer.parseInt(bikePrice.get(i).getAttribute("data-price"));
+			String bikeName = modelName.get(i).getText();// Getting bike name
+			String launchDate = dateOfBikes.get(i).getText();// Getting launch date
+			int price = Integer.parseInt(bikePrice.get(i).getAttribute("data-price")); // Getting bike price
+			// Checking if the price is less than 400000
 			if (price < 400000) {
 				System.out.println(bikeName + "\n" + price + "\n" + launchDate);
 				System.out.println("****************************");
+				// Storing details in Excel
 				excelUtility.setCellData("UpcomingBike", row, 0, bikeName);
 				excelUtility.setCellData("UpcomingBike", row, 1, price + "");
 				excelUtility.setCellData("UpcomingBike", row, 2, launchDate);
-				row++;
+				row++; // Incrementing row counter
 			}
 		}
 	}

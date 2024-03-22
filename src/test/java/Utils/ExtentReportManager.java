@@ -25,7 +25,7 @@ public class ExtentReportManager implements ITestListener {
 	public ExtentTest test;
 
 	String repName;
-
+	// Method to initialize extent report settings before test execution
 	public void onStart(ITestContext testContext) {		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
@@ -54,7 +54,7 @@ public class ExtentReportManager implements ITestListener {
 			extent.setSystemInfo("Groups", includedGroups.toString());
 		}
 	}
-
+    // Method to handle test success
 	public void onTestSuccess(ITestResult result) {
 	
 		test = extent.createTest(result.getTestClass().getName());
@@ -68,7 +68,7 @@ public class ExtentReportManager implements ITestListener {
 			e1.printStackTrace();
 		}
 	}
-
+	// Method to handle test failure
 	public void onTestFailure(ITestResult result) {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
@@ -92,14 +92,14 @@ public class ExtentReportManager implements ITestListener {
 			test.addScreenCaptureFromPath(imgPath);
 		}
 	}
-
+	// Method to handle test skipped
 	public void onTestSkipped(ITestResult result) {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.SKIP, result.getName()+" got skipped");
 		test.log(Status.INFO, result.getThrowable().getMessage());
 	}
-
+	// Method to execute actions after test execution and generate report
 	public void onFinish(ITestContext testContext) {
 		
 		extent.flush();

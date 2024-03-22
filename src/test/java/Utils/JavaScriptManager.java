@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class JavaScriptManager {
 	JavascriptExecutor jse;
-	//Scroll into an element
+	// Method to scroll into view of an element
 	public void scrollIntoView(WebDriver driver, WebElement element) {
 		jse = (JavascriptExecutor)driver;
 		jse.executeScript("arguments[0].scrollIntoView(true);", element);
@@ -18,7 +18,7 @@ public class JavaScriptManager {
 		}
 	}
 	
-	//Scroll to the top
+	// Method to scroll to the top of the page
 	public void scrollToTop(WebDriver driver) {
 		jse=(JavascriptExecutor)driver;
 		jse.executeScript("window.scrollTo(0, 0);");

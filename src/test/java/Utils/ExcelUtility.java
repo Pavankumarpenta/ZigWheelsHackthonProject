@@ -22,34 +22,7 @@ public class ExcelUtility {
 	public CellStyle style;   
 	String path = System.getProperty("user.dir")+"\\TestData\\TestData.xlsx";
 	
-	
-	//Get the count of rows in the sheet
-	public int getRowCount(String sheetName) throws IOException 
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		int rowcount=sheet.getLastRowNum();
-		workbook.close();
-		fi.close();
-		return rowcount;		
-	}
-	
-	//Get the count cells in the sheet
-	public int getCellCount(String sheetName,int rownum) throws IOException
-	{
-		fi=new FileInputStream(path);
-		workbook=new XSSFWorkbook(fi);
-		sheet=workbook.getSheet(sheetName);
-		row=sheet.getRow(rownum);
-		int cellcount=row.getLastCellNum();
-		workbook.close();
-		fi.close();
-		return cellcount;
-	}
-	
-
-	//
+	// Method to set cell data in the sheet
 	public void setCellData(String sheetName,int rownum,int colnum,String data) throws IOException
 	{
 		File xlfile=new File(path);

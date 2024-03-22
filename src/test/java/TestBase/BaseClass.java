@@ -22,18 +22,22 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 public static WebDriver driver;
-	public static Logger logger;
+	public static Logger logger;     // Declaring Logger objects
 	
+	// Method to initialize the browser based on parameters passed
 	@BeforeTest(groups={"smoke","regression","master"})
 	@Parameters({"os", "browser"})
+
+    // Loading configuration properties from config file
 	public void invokeBrowser(String os, String browser) throws IOException {
 		FileReader fileReader = new FileReader(".//src/test/resources/config.properties");
 		Properties properties = new Properties();
 		properties.load(fileReader);
 		
-		//loading log4j2 file
+		// Initializing logger using log4j2
 		logger = LogManager.getLogger(this.getClass());
 		
+        // Setting up browser based on input parameter
 		if(browser.equalsIgnoreCase("chrome")) {			
 			driver = new ChromeDriver();
 		}else if(browser.equalsIgnoreCase("edge")) {
@@ -42,27 +46,32 @@ public static WebDriver driver;
 			System.out.println("No Matching Browser");
 			return;
 		}
+        // Configuring driver settings
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(properties.getProperty("Url"));
 		driver.manage().window().maximize();
 	}
 	
+    // Method to close the browser after test execution
 	@AfterTest(groups={"smoke","regression","master"})
 	public void tearDown() {
 		driver.quit();
 	}
 	
 	
-	//screenshot implementation
+	// Method to capture screenshot
 	public String screenshot(String name) throws IOException {
-		
+		// Generating timestamp for unique file name
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		
+		// Capturing screenshot using Selenium TakesScreenshot interface
 		TakesScreenshot takesScreenshot = (TakesScreenshot)driver;
 		File file = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        // Defining path for storing screenshot
 		String path = System.getProperty("user.dir")+"\\ScreenShots\\"+name+" " +timeStamp+".png";
 		File targetLocation = new File(path);
+		// Saving screenshot file
 		FileUtils.copyFile(file, targetLocation);
 		return path;
 	}

@@ -9,12 +9,13 @@ import TestBase.BaseClass;
 
 
 public class TestCase002_UsedCarsInChennai extends BaseClass {
-	
+	// Test method to get details of used cars in Chennai
 	@Test(priority=1,groups= {"regression","master"})
 	public void UsedCarDetails() throws InterruptedException, IOException {
-		logger.info("**** Starting TC_002_UsedCar ****");
+		logger.info("**** Starting TestCase002_UsedCarsInChennai  ****");
 		try {
 			logger.info("clicking on Used Cars and selecting Chennai");
+			// Instantiate UsedCarsInchennai object
 			UsedCarsInchennai usedCar = new UsedCarsInchennai(driver);
 			
 			//Hover and select used cars
@@ -30,6 +31,6 @@ public class TestCase002_UsedCarsInChennai extends BaseClass {
 			e.printStackTrace();
 			Assert.fail();
 		}
-		logger.info("**** Finished TC_002_UsedCar ****");
+		logger.info("**** Finished TestCase002_UsedCarsInChennai ****");
 	}
 }

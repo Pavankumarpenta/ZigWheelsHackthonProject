@@ -1,9 +1,9 @@
-10:03:16.861 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_002_UsedCar ****
-10:03:16.872 [main] INFO  TestCase.TC001_UpBikeDetails - clicking on Used Cars and selecting Chennai
-10:03:31.688 [main] INFO  TestCase.TC001_UpBikeDetails - **** Finished TC_002_UsedCar ****
-10:03:31.971 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_003_LoginSignup ****
-10:03:31.972 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying login/SignUp
-10:03:34.968 [main] INFO  TestCase.TC001_UpBikeDetails - **** Finished TC_003_LoginSignup ****
-10:03:35.327 [main] INFO  TestCase.TC001_UpBikeDetails - **** Starting TC_004_LoginPage ****
-10:03:35.327 [main] INFO  TestCase.TC001_UpBikeDetails - Verifying loginPage
-10:03:42.584 [main] INFO  TestCase.TC001_UpBikeDetails - **** Finished TC_004_LoginPage ****
+12:50:08.956 [main] INFO  TestBase.BaseClass - **** Starting TestCase002_UsedCarsInChennai  ****
+12:50:08.968 [main] INFO  TestBase.BaseClass - clicking on Used Cars and selecting Chennai
+12:50:24.985 [main] INFO  TestBase.BaseClass - **** Finished TestCase002_UsedCarsInChennai ****
+12:50:24.995 [main] INFO  TestBase.BaseClass - **** Starting TestCase003_ClickonLoginSignUp  ****
+12:50:24.995 [main] INFO  TestBase.BaseClass - Verifying login/SignUp
+12:50:28.715 [main] INFO  TestBase.BaseClass - **** Finished TestCase003_ClickonLoginSignUp  ****
+12:50:28.715 [main] INFO  TestBase.BaseClass - **** Starting TestCase004_SignInGoogleAccounts  ****
+12:50:28.716 [main] INFO  TestBase.BaseClass - Verifying loginPage
+12:50:37.084 [main] INFO  TestBase.BaseClass - **** Finished TestCase004_SignInGoogleAccounts  ****

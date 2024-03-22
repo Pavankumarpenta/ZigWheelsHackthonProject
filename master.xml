@@ -9,21 +9,21 @@
 		<parameter name="os" value="Windows" />
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="TestCase.TC001_UpBikeDetails" />
-			<class name="TestCase.TC002_UsedCarsDetails" />
-			<class name="TestCase.TC003_GoogleLogin" />
-			<class name="TestCase.TC004_GoogleSignup" />
+			<class name="TestCase.TestCase001_UpComingBikeDetails" />
+			<class name="TestCase.TestCase002_UsedCarsInChennai" />
+			<class name="TestCase.TestCase003_ClickonLoginSignUp" />
+			<class name="TestCase.TestCase004_SignInGoogleAccounts" />
 		</classes>
 	</test>
 	<!--
 	<test thread-count="5" name="EdgeTest">
 		<parameter name="os" value="Windows" />
 		<parameter name="browser" value="edge" />
-		<classes>
-			<class name="TestCase.TC001_UpBikeDetails"  />
-			<class name="TestCase.TC002_UsedCarsDetails" />
-			<class name="TestCase.TC003_GoogleLogin" />
-			<class name="TestCase.TC004_GoogleSignup" />
+	<classes>
+			<class name="TestCase.TestCase001_UpComingBikeDetails" />
+			<class name="TestCase.TestCase002_UsedCarsInChennai" />
+			<class name="TestCase.TestCase003_ClickonLoginSignUp" />
+			<class name="TestCase.TestCase004_SignInGoogleAccounts" />
 		</classes>
-	</test>   -->
+			</test>   -->
 </suite> 

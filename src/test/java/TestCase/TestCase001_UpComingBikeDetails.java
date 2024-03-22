@@ -8,13 +8,14 @@ import PageObject.ZigWheelsHomePage;
 import TestBase.BaseClass;
 
 public class TestCase001_UpComingBikeDetails extends BaseClass {
-
+    
+	// Test method to click on New Bikes and navigate to Upcoming Bikes
 	@Test(priority=1,groups= {"smoke","regression","master"})
 	public void clickNewBikes() throws InterruptedException {
-		logger.info("**** Starting TC_001_UpcomingBike ****");
+		logger.info("**** Starting TestCase001_UpComingBikeDetails ****");
 		try {
 			logger.info("clicking on  New Bikes ");
-			// Navigate to Zigwheels page
+			// Instantiate ZigWheelsHomePage object
 			ZigWheelsHomePage zwg = new ZigWheelsHomePage(driver);
 			// click on new bikes
 			zwg.clickNewBikes();
@@ -26,11 +27,12 @@ public class TestCase001_UpComingBikeDetails extends BaseClass {
 			Assert.fail();
 		}
 	}
-
+	// Test method to click on Upcoming Bikes and display bike details
 	@Test( priority=2,dependsOnMethods = { "clickNewBikes" }, groups= {"smoke","regression","master"})
 	public void clickUpcomingBikes() {
 		try {
 			logger.info("clicking on Upcoming Bikes");
+			// Instantiate UpcomingBikesDetails object
 			UpcomingBikesDetails upcomingBike = new UpcomingBikesDetails(driver);
 			// Click on Manufacturer
 			upcomingBike.clickManufacturer();
@@ -45,7 +47,7 @@ public class TestCase001_UpComingBikeDetails extends BaseClass {
 			e.printStackTrace();
 			Assert.fail();
 		}
-		logger.info("**** Finished TC_001_UpcomingBike ****");
+		logger.info("**** Finished TestCase001_UpComingBikeDetails ****");
 	}
 
 }

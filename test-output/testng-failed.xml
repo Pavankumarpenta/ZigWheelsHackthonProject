@@ -8,35 +8,20 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCase.TC002_UsedCarsDetails">
-        <methods>
-          <include name="invokeBrowser"/>
-          <include name="UsedCarDetails"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- TestCase.TC002_UsedCarsDetails -->
-      <class name="TestCase.TC001_UpBikeDetails">
-        <methods>
-          <include name="clickNewBikes"/>
-          <include name="invokeBrowser"/>
-          <include name="clickUpcomingBikes"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- TestCase.TC001_UpBikeDetails -->
-      <class name="TestCase.TC004_GoogleSignup">
-        <methods>
-          <include name="invokeBrowser"/>
-          <include name="verifyLoginPage"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- TestCase.TC004_GoogleSignup -->
-      <class name="TestCase.TC003_GoogleLogin">
+      <class name="TestCase.TestCase003_ClickonLoginSignUp">
         <methods>
           <include name="verifyLoginPage"/>
           <include name="invokeBrowser"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TestCase.TC003_GoogleLogin -->
+      </class> <!-- TestCase.TestCase003_ClickonLoginSignUp -->
+      <class name="TestCase.TestCase004_SignInGoogleAccounts">
+        <methods>
+          <include name="verifyLoginPage"/>
+          <include name="invokeBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCase.TestCase004_SignInGoogleAccounts -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

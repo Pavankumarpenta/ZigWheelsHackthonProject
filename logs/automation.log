@@ -1,9 +1,14 @@
-12:50:08.956 [main] INFO  TestBase.BaseClass - **** Starting TestCase002_UsedCarsInChennai  ****
-12:50:08.968 [main] INFO  TestBase.BaseClass - clicking on Used Cars and selecting Chennai
-12:50:24.985 [main] INFO  TestBase.BaseClass - **** Finished TestCase002_UsedCarsInChennai ****
-12:50:24.995 [main] INFO  TestBase.BaseClass - **** Starting TestCase003_ClickonLoginSignUp  ****
-12:50:24.995 [main] INFO  TestBase.BaseClass - Verifying login/SignUp
-12:50:28.715 [main] INFO  TestBase.BaseClass - **** Finished TestCase003_ClickonLoginSignUp  ****
-12:50:28.715 [main] INFO  TestBase.BaseClass - **** Starting TestCase004_SignInGoogleAccounts  ****
-12:50:28.716 [main] INFO  TestBase.BaseClass - Verifying loginPage
-12:50:37.084 [main] INFO  TestBase.BaseClass - **** Finished TestCase004_SignInGoogleAccounts  ****
+14:12:43.537 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Finished TestCase004_SignInGoogleAccounts  ****
+14:14:07.677 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Starting TestCase001_UpComingBikeDetails ****
+14:14:07.685 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - clicking on  New Bikes 
+14:14:13.544 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - clicking on Upcoming Bikes
+14:14:28.162 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Finished TestCase001_UpComingBikeDetails ****
+14:14:28.500 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Starting TestCase002_UsedCarsInChennai  ****
+14:14:28.501 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - clicking on Used Cars and selecting Chennai
+14:14:43.776 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Finished TestCase002_UsedCarsInChennai ****
+14:14:44.161 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Starting TestCase003_ClickonLoginSignUp  ****
+14:14:44.161 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - Verifying login/SignUp
+14:14:47.712 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Finished TestCase003_ClickonLoginSignUp  ****
+14:14:48.222 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Starting TestCase004_SignInGoogleAccounts  ****
+14:14:48.223 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - Verifying loginPage
+14:14:55.419 [main] INFO  TestCase.TestCase001_UpComingBikeDetails - **** Finished TestCase004_SignInGoogleAccounts  ****

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\2308546\Hackathon-FinalProject\Zigwheels\master.xml</span>
+                    <span>C:\Users\2308546\Hackathon-FinalProject\Zigwheels\grouping.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -118,12 +118,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCase.TestCase003_ClickonLoginSignUp" class="method navigator-link" hash-for-method="verifyLoginPage">verifyLoginPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCase.TestCase004_SignInGoogleAccounts" class="method navigator-link" hash-for-method="verifyLoginPage">verifyLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCase.TestCase004_SignInGoogleAccounts" class="method navigator-link" hash-for-method="verifyLoginPage">verifyLoginPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCase.TestCase003_ClickonLoginSignUp" class="method navigator-link" hash-for-method="verifyLoginPage">verifyLoginPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -138,21 +138,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCase.TestCase002_UsedCarsInChennai</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="UsedCarDetails">
-                  </a> <!-- UsedCarDetails -->
-                  <span class="method-name">UsedCarDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -178,14 +163,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCase.TestCase004_SignInGoogleAccounts</span>
+              <span class="class-name">TestCase.TestCase002_UsedCarsInChennai</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginPage">
-                  </a> <!-- verifyLoginPage -->
-                  <span class="method-name">verifyLoginPage</span>
+                  <a name="UsedCarDetails">
+                  </a> <!-- UsedCarDetails -->
+                  <span class="method-name">UsedCarDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,10 +190,25 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.TestCase004_SignInGoogleAccounts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPage">
+                  </a> <!-- verifyLoginPage -->
+                  <span class="method-name">verifyLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2308546\Hackathon-FinalProject\Zigwheels\master.xml</span>
+            <span class="header-content">C:\Users\2308546\Hackathon-FinalProject\Zigwheels\grouping.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,6 +221,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;Windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;master&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestCase.TestCase001_UpComingBikeDetails&quot;/&gt;
       &lt;class name=&quot;TestCase.TestCase002_UsedCarsInChennai&quot;/&gt;
@@ -325,28 +330,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'UsedCarDetails')
 data.setCell(0, 2, 'TestCase.TestCase002_UsedCarsInChennai')
-data.setCell(0, 3, 15819);
+data.setCell(0, 3, 15277);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'clickUpcomingBikes')
 data.setCell(1, 2, 'TestCase.TestCase001_UpComingBikeDetails')
-data.setCell(1, 3, 14038);
+data.setCell(1, 3, 14619);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginPage')
 data.setCell(2, 2, 'TestCase.TestCase004_SignInGoogleAccounts')
-data.setCell(2, 3, 7171);
+data.setCell(2, 3, 7199);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'clickNewBikes')
 data.setCell(3, 2, 'TestCase.TestCase001_UpComingBikeDetails')
-data.setCell(3, 3, 5288);
+data.setCell(3, 3, 5614);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyLoginPage')
 data.setCell(4, 2, 'TestCase.TestCase003_ClickonLoginSignUp')
-data.setCell(4, 3, 3659);
+data.setCell(4, 3, 3554);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -367,15 +372,6 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCase.TestCase002_UsedCarsInChennai</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">invokeBrowser</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCase.TestCase004_SignInGoogleAccounts</span>
-              <div class="ignored-methods-div">
                 <span class="ignored-method-name">invokeBrowser</span>
                 <br/>
                 <span class="ignored-method-name">tearDown</span>
@@ -385,9 +381,18 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCase.TestCase003_ClickonLoginSignUp</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">invokeBrowser</span>
+                <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCase.TestCase004_SignInGoogleAccounts</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">invokeBrowser</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -406,39 +411,39 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">clickNewBikes</span>
-                <span class="method-start">8355 ms</span>
+                <span class="method-start">8414 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clickUpcomingBikes</span>
-                <span class="method-start">13891 ms</span>
+                <span class="method-start">14305 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCase.TestCase002_UsedCarsInChennai</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">UsedCarDetails</span>
-                <span class="method-start">28291 ms</span>
+                <span class="method-start">29261 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCase.TestCase003_ClickonLoginSignUp</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPage</span>
-                <span class="method-start">44623 ms</span>
+                <span class="method-start">44921 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCase.TestCase004_SignInGoogleAccounts</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPage</span>
-                <span class="method-start">48690 ms</span>
+                <span class="method-start">48982 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCase.TestCase001_UpComingBikeDetails</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">55991 ms</span>
+                <span class="method-start">56304 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

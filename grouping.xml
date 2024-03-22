@@ -11,16 +11,17 @@
 		
 			<groups>
 		<run>
-		<include name="smoke"/> 
-		<!--<include name="master"/>-->
-		<include name="regression"/>
+		<!--<include name="smoke"/> 
+		<include name="master"/>
+		<include name="regression"/>-->
+		<include name="master"/>
 		</run>
 		</groups>
 		<classes>
-			<class name="TestCase.TestCase1_UpcomingBikeDetails" />
-			<class name="TestCase.TestCase2_UsedCarsDetails" />
-			<class name="TestCase.TestCase3_GoogleLogin" />
-			<class name="TestCase.TestCase4_GoogleSignup" />
+		    <class name="TestCase.TestCase001_UpComingBikeDetails" />
+			<class name="TestCase.TestCase002_UsedCarsInChennai" />
+			<class name="TestCase.TestCase003_ClickonLoginSignUp" />
+			<class name="TestCase.TestCase004_SignInGoogleAccounts" />
 		</classes>
 	</test>
 	</suite>

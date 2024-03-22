@@ -37,10 +37,6 @@ public class UsedCarsInchennai extends BasePage {
 	@FindBy(xpath = "//div[text()='Popular Models']")
 	WebElement popularModelsElements;
 
-	// List of popular models displayed on the page
-	@FindBy(xpath = "//div[@class='gsc_thin_scroll']/ul/li/label")
-	List<WebElement> popularModelsList;
-
 	// Checkbox of the popular models
 	@FindBy(xpath = "//ul[@class=\"zw-sr-secLev usedCarMakeModelList popularModels ml-20 mt-10\"]/li/label")
 	List<WebElement> checkboxOfCars;
@@ -59,6 +55,7 @@ public class UsedCarsInchennai extends BasePage {
 
 	// Method to select the location for used cars (Chennai)
 	public void clickSelectedCar() throws IOException, InterruptedException {
+		
 		new BaseClass().screenshot("UsedCarLocation");
 
         // Clicking on the location for used cars using JavaScript executor

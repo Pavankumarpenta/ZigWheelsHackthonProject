@@ -11,10 +11,10 @@
 		
 			<groups>
 		<run>
-		<!--<include name="smoke"/> 
-		<include name="master"/>
+		<include name="smoke"/> 
+		<!--<include name="master"/>
 		<include name="regression"/>-->
-		<include name="master"/>
+		
 		</run>
 		</groups>
 		<classes>

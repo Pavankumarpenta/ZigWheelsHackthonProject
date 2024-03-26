@@ -10,7 +10,7 @@ public class ClickonLoginSignup extends BasePage{
 	}
 
 	// WebElement representing Zigwheels link
-	@FindBy(xpath="//a[@class='zw i-b mt-3 zw-logo-a zw-srch-logo' or @title='ZigWheels']")
+	@FindBy(xpath="//*[@id=\"Header\"]/div/div[1]/div[1]/a/img")
 	public WebElement zigwheels;
 	
 	// WebElement representing Login/SignUp Button

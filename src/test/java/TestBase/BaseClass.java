@@ -63,7 +63,7 @@ public static WebDriver driver;
 	// Method to capture screenshot
 	public String screenshot(String name) throws IOException {
 		// Generating timestamp for unique file name
-		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.hh.mm.ss").format(new Date());
 		
 		// Capturing screenshot using Selenium TakesScreenshot interface
 		TakesScreenshot takesScreenshot = (TakesScreenshot)driver;

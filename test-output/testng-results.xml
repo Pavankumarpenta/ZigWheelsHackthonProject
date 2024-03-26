@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-22T14:29:15 IST" name="Suite" finished-at="2024-03-22T14:30:12 IST" duration-ms="57489">
+  <suite started-at="2024-03-26T12:36:46 IST" name="Suite" finished-at="2024-03-26T12:37:51 IST" duration-ms="64840">
     <groups>
       <group name="regression">
         <method signature="TestCase001_UpComingBikeDetails.clickNewBikes()[pri:1, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" name="clickNewBikes" class="TestCase.TestCase001_UpComingBikeDetails"/>
@@ -24,21 +24,21 @@
         <method signature="TestCase001_UpComingBikeDetails.clickUpcomingBikes()[pri:2, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" name="clickUpcomingBikes" class="TestCase.TestCase001_UpComingBikeDetails"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-03-22T14:29:15 IST" name="ChromeTest" finished-at="2024-03-22T14:30:12 IST" duration-ms="57489">
+    <test started-at="2024-03-26T12:36:46 IST" name="ChromeTest" finished-at="2024-03-26T12:37:51 IST" duration-ms="64840">
       <class name="TestCase.TestCase004_SignInGoogleAccounts">
-        <test-method signature="verifyLoginPage()[pri:1, instance:TestCase.TestCase004_SignInGoogleAccounts@6c4906d3]" started-at="2024-03-22T14:30:04 IST" name="verifyLoginPage" finished-at="2024-03-22T14:30:11 IST" duration-ms="7261" status="PASS">
+        <test-method signature="verifyLoginPage()[pri:1, instance:TestCase.TestCase004_SignInGoogleAccounts@6c4906d3]" started-at="2024-03-26T12:37:41 IST" name="verifyLoginPage" finished-at="2024-03-26T12:37:50 IST" duration-ms="8434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPage -->
       </class> <!-- TestCase.TestCase004_SignInGoogleAccounts -->
       <class name="TestCase.TestCase003_ClickonLoginSignUp">
-        <test-method signature="verifyLoginPage()[pri:1, instance:TestCase.TestCase003_ClickonLoginSignUp@4bdeaabb]" started-at="2024-03-22T14:30:00 IST" name="verifyLoginPage" finished-at="2024-03-22T14:30:03 IST" duration-ms="3458" status="PASS">
+        <test-method signature="verifyLoginPage()[pri:1, instance:TestCase.TestCase003_ClickonLoginSignUp@4bdeaabb]" started-at="2024-03-26T12:37:37 IST" name="verifyLoginPage" finished-at="2024-03-26T12:37:41 IST" duration-ms="3562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPage -->
       </class> <!-- TestCase.TestCase003_ClickonLoginSignUp -->
       <class name="TestCase.TestCase001_UpComingBikeDetails">
-        <test-method is-config="true" signature="invokeBrowser(java.lang.String,java.lang.String)[pri:0, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-22T14:29:15 IST" name="invokeBrowser" finished-at="2024-03-22T14:29:24 IST" duration-ms="8267" status="PASS">
+        <test-method is-config="true" signature="invokeBrowser(java.lang.String,java.lang.String)[pri:0, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-26T12:36:47 IST" name="invokeBrowser" finished-at="2024-03-26T12:36:56 IST" duration-ms="9415" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,21 +54,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="clickNewBikes()[pri:1, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-22T14:29:24 IST" name="clickNewBikes" finished-at="2024-03-22T14:29:29 IST" duration-ms="5280" status="PASS">
+        <test-method signature="clickNewBikes()[pri:1, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-26T12:36:56 IST" name="clickNewBikes" finished-at="2024-03-26T12:37:02 IST" duration-ms="6026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickNewBikes -->
-        <test-method signature="clickUpcomingBikes()[pri:2, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-22T14:29:29 IST" name="clickUpcomingBikes" finished-at="2024-03-22T14:29:44 IST" depends-on-methods="TestCase.TestCase001_UpComingBikeDetails.clickNewBikes" duration-ms="14454" status="PASS">
+        <test-method signature="clickUpcomingBikes()[pri:2, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-26T12:37:02 IST" name="clickUpcomingBikes" finished-at="2024-03-26T12:37:17 IST" depends-on-methods="TestCase.TestCase001_UpComingBikeDetails.clickNewBikes" duration-ms="14147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickUpcomingBikes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-22T14:30:11 IST" name="tearDown" finished-at="2024-03-22T14:30:12 IST" duration-ms="1335" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCase.TestCase001_UpComingBikeDetails@4c163e3]" started-at="2024-03-26T12:37:50 IST" name="tearDown" finished-at="2024-03-26T12:37:51 IST" duration-ms="1197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCase.TestCase001_UpComingBikeDetails -->
       <class name="TestCase.TestCase002_UsedCarsInChennai">
-        <test-method signature="UsedCarDetails()[pri:1, instance:TestCase.TestCase002_UsedCarsInChennai@5a59ca5e]" started-at="2024-03-22T14:29:44 IST" name="UsedCarDetails" finished-at="2024-03-22T14:29:59 IST" duration-ms="15231" status="PASS">
+        <test-method signature="UsedCarDetails()[pri:1, instance:TestCase.TestCase002_UsedCarsInChennai@5a59ca5e]" started-at="2024-03-26T12:37:17 IST" name="UsedCarDetails" finished-at="2024-03-26T12:37:37 IST" duration-ms="19678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UsedCarDetails -->
